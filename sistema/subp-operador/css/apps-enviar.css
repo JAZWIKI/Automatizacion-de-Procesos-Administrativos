@@ -1,0 +1,43 @@
+.container-app {
+  padding: 0 20px;
+}
+
+.sub-container-app {
+  max-width: 260px;
+  max-height: 150px;
+  margin: 50px auto 0;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.125);
+}
+
+.container-mail {
+  padding: 0 2px;
+}
+
+.sub-container-mail {
+ 
+  max-width: 290px;
+  max-height: 150px;
+  margin: 5px auto 0;
+  display: block;
+  background: #ff10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+.sub-container-mail form{
+    padding: 5px 1px 5px 1px;
+    
+}
+.sub-container-mail input{
+    padding: 1px 8px 0px 10px;
+    width: 280px;
+    padding-top: 10px;
+}
+.img-app{
+    width: 85px;
+    height: 85px;
+}
+.img-app:hover{
+    width: 100px;
+    height: 100px;
+}

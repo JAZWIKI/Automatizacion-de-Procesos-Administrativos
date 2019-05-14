@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Sunflower:300");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sunflower", sans-serif;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+body .container-mobile-cjf{
+    display: inline-flex;
+}
+.container {
+  padding: 0 20px;
+}
+
+.sub-container {
+  max-width: 500px;
+  width: 100%;
+  height: 350px;
+  margin: 150px auto 0;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.125);
+}
+
+
+
+
+.container-mobile {
+  padding: 0 10px;
+}
+
+.sub-container-mobile {
+  max-width: 300px;
+    border-radius: 10px;
+  min-width: 150px;
+  width: 90%;
+  height: 300px;
+  margin: 15px auto 0;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.125);
+}
+
+
+.container-mobile-info form {
+  padding: 50px 0px;
+}
+
+.sub-container-mobile-info {
+  max-width: 300px;
+  border-radius: 30px;
+  min-width: 15px;
+  width: 100%;
+  height: 150px;
+  margin: 30px auto 0;
+  display:flex;
+  background: #fff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.125);
+}
+
+
+.container-mobile-cjf {
+position:relative;
+     
+}
+
+.sub-container-mobile-cjf {
+top: 80px;
+  max-width: 60px;
+  border-radius: 8px;
+  min-width: 300px;
+  width: 90%;
+  height: 400px;
+  display: inline-block;
+  background: #fff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.125);
+    
+}
+
+
+
+
+
+
+
+.sub-container .banner-img {
+  width: 220px;
+  height: 100%;
+}
+.banner-img {
+  background-color:#fff;
+background-image: url("urban-highway-traffic-small.png");
+background-position: center;
+background-size: auto 100%;
+}
+
+.sub-container .banner-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.sub-container .login-form {
+  width: 280px;
+  height: 100%;
+  text-align: center;
+  padding: 40px 35px 0;
+  position: relative;
+}
+.sub-container .login-form .title {
+  color: #105fa0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+
+
+
+
+.login-form .label {
+  color: #105fa0;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.login-form .input {
+  margin: 5px 0 15px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 1px;
+  font-size: large;
+}
+
+.login-form .forgot a {
+  color: #105fa0;
+  font-size: 18px;
+}
+
+
+
+.sub-container .login-Recuperarcontrasena {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  padding: 40px 35px 0;
+  position: relative;
+}
+.sub-container .login-Recuperarcontrasena .title {
+  color: #105fa0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.login-Recuperarcontrasena .label {
+  color: #105fa0;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.login-Recuperarcontrasena .input {
+  margin: 5px 0 15px;
+  width: 100%;
+  padding: 8px;
+}
+
+.login-Recuperarcontrasena .forgot a {
+  color: #105fa0;
+  font-size: 18px;
+}
+
+
+.btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: #e89c07;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .sub-container {
+    flex-direction: column;
+    max-width: 300px;
+    height: auto;
+    margin-top: 10px;
+  }
+  .sub-container .banner-img {
+    width: 100%;
+    height: 220px;
+
+  }
+  .banner-img{
+    background-color:#fff;
+  background-image: url("urban-highway-traffic.png");
+  background-position: center;
+  background-size: auto 100%;
+
+
+  }
+  .sub-container .login-form {
+    width: 100%;
+    padding: 20px 35px 0;
+  }
+  .sub-container .login-form .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .login-form .input {
+    margin-bottom: 10px;
+  }
+
+  .login-form .forgot {
+    margin-bottom: 55px;
+  }
+  .btn {
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+  }
+}

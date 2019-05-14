@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    
+
+<title>Sistema Automatizado de Bitacoras</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/estilo-operador.css" />
+<link rel="stylesheet" href="css/menu.css" />
+<link rel="shortcut icon" href="icono.ico" />
+<link rel="stylesheet" href="css/registro.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="css/acercade.css">
+
+    
+<script type="text/javascript">
+
+function DesplegarOpcionNuevo(){
+    
+var seleccionado = document.getElementById("Contrato").selectedIndex;
+                //alert(seleccionado);
+    if(seleccionado==0){
+        document.getElementById("carga-gasolina").style.display='block';
+        document.getElementById("nuevo-contrato").style.display='none';
+    }
+    else{
+     if(seleccionado==1){
+        document.getElementById("nuevo-contrato").style.display='block';
+         document.getElementById("carga-gasolina").style.display='none';
+    }   
+        else{
+            document.getElementById("carga-gasolina").style.display='none';
+             document.getElementById("nuevo-contrato").style.display='none';
+        }
+    }
+    
+    
+}
+</script>
+    
+    
+        
+    
+    
+</head>
+
+<body>
+    <header>
+       <div class="contenedor">
+        
+           <img  class="img-logo" src="img/cara.jpg">
+           <h1>Conductor</h1>
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a class="icon-doc-text-inv" href="operador-principal.html">Bitacora</a>
+            <a class="icon-paper-plane-empty" href="operador-enviar.html">Enviar Bitacora</a>
+            <a class="icon-wrench" href="operador-configuracion.html">Mi Configuracion</a>
+            <a class="icon-github" href="#" id="btabrirpop">Acerca de..</a>
+          </nav>
+
+       </div>
+ 
+
+    </header>
+<body>    
+    
+    
+   
+           <br><br><br><br>
+
+    
+    
+<div class="container-mobile">
+  <div class="sub-container-mobile">
+           <div class="registro">
+                <form id="FMregistro">
+                    <select name="Contrato" id="Contrato" onchange="DesplegarOpcionNuevo();">
+                        
+                        <option value="CargaGasolina">Carga Gasolina</option>
+                        <option value="Nuevo">Nuevo Contrato</option>
+                        <option value="ConBanamexOKI">Banamex - Oki</option>
+                        <option value="ConCJFFUJI">CJF  Fuji</option>
+                        <option value="Compuinterno">Oficina -CompuTI Interno</option>
+                        
+                        
+                    </select>
+                    <input type="text" placeholder="KM Anterior" disabled>
+                    <input type="text" placeholder="KM Actual">
+                    
+                            <br>
+                    
+                    <div class="carga-gasolina" id="carga-gasolina" style="display:none;">
+                            <input type="number" placeholder="Litros">
+                            <input type="number" placeholder="Precio en $">
+                        </div>
+                    
+                        <div class="nuevo-contrato" id="nuevo-contrato" style="display:none;"> 
+                            <input type="text" placeholder="Cliente Final">
+                            <input type="text" placeholder="Nombre de Contrato">
+                        </div>
+                    <input class="btnreg" type="button" value="Registrar" required>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+    
+<div class="container-mobile-info">
+  <div class="sub-container-mobile-info">
+           <div class="registro">
+                <form id="FMinformacion">
+                    
+                     <h1>
+                    195878 - 196258<br>
+                    </h1>
+                    <center>
+                    15/05/2019 14:36 <br>
+                    Lugar : Bodega Juchitan  <br>
+                    Contrato: Pasteleria S.A
+                    </center>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+     
+        <div class="container-mobile-info">
+  <div class="sub-container-mobile-info">
+           <div class="registro">
+                <form id="FMinformacion">
+                    
+                     <h1>
+                    194991 - 195001<br>
+                    </h1>
+                    <center>
+                    14/05/2019 11:06 <br>
+                    Lugar : Banco Central <br>
+                    Contrato: Bancomer SA
+                    </center>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+    
+    
+     <div class="container-mobile-info">
+  <div class="sub-container-mobile-info">
+           <div class="registro">
+                <form id="FMinformacion">
+                    
+                     <h1>
+                    195001 - 195878<br>
+                    </h1>
+                    <center>
+                    14/05/2019 18:06 <br>
+                    Lugar : Gasolinera Centro Oaxaca <br>
+                    Contrato: CompuTI Interno
+                    Litros Cargados :40
+                    Efectivo Gastado : $800.00
+                    </center>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+    
+    
+    
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="cerrarpopup" class="btcerraropoup" >
+            <i class="icon-down-open"></i>
+            </a>
+            <center>
+            <p class="titulo-popup">
+            Acerca de ..
+            </p>
+        <p class="TituloUniversidad">
+            Universidad de Guadalajara  
+                
+            
+       </p>
+            <p>Sistema de Universidad Virtual</p>
+            
+            <p> I7729_2019A Diseño de Aplicacipnes</p>
+                <p> Unidad 3 Actividad 3</p>
+                <p> GUI para un microsotio web</p>
+                Sistema Automatizado de Bitacoras .
+                <p> Alumno : Jaasiel Alejandro Castellanos Gomez</p>
+                <p> Docente : </p>
+            
+                </center>
+            <img src="../img/udgcolor.png"> <img src="../img/udgvirtual.jpg">
+            <img src="../icono.ico">
+        </div>
+    
+    </div>
+    
+    
+    
+    <script src="js/pop.js"></script>
+    </body>
+    <footer>
+        CompuTI de Oaxaca 2019
+    </footer>
+</body>
+</html>

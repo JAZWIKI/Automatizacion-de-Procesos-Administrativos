@@ -1,0 +1,162 @@
+
+<html>
+<head>
+<title>CompuTI SA</title>
+<link rel="stylesheet" href="css/estilos-index.css">
+<link rel="stylesheet" href="css/acercade.css">
+<link rel="shortcut icon" href="sistema/icono.ico" />    
+    
+<script type="text/javascript">
+function mostrarcontacto()
+{
+
+    document.getElementById("overlay").style.display='flex';
+}
+
+function cerrarcontacto()
+{
+
+    document.getElementById("overlay").style.display='none';
+}
+</script>
+    
+</head>
+    <header>
+    <div class="contenedor">
+        <img  class="logotipo" src="sistema/img/logo-imagen-blanco.png" width="40px">
+        <h1>CompuTI</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="sistema/index.html">Acceso al Sistema</a>
+                </nav>
+            </div>
+</header>
+        
+        <main>
+            <section id="banner">
+                <img src="img/detection-563805_960_720.jpg">
+                <div class="contenedor">
+                    <h2>Respuesta Rapida a Incidentes TI</h2>
+                    <p>Estamos con usted, antes que Nadie</p>
+                    <form>
+<input type="button" 
+onclick="mostrarcontacto()" 
+value="Solicitar Servicio">
+</form>
+                </div>
+            </section>
+            
+            <section id="bienvenidos">
+            <div class="contenedor">
+                <h2>CompuTI de Oaxaca SA</h2>
+                <p>CompuTI de Oaxaca es una empresa 100% mexicana, multimarca, con alianzas estratégicas para ofrecer Servicios y Soluciones, conforme a las necesidades del mercado nacional.</p>
+                </div>
+            </section>
+            
+            <section id="blog">
+                <h3>Filosofia</h3>
+                <center>
+                <div class="contenedor">
+                    <article>
+                        <img src="img/mision.jpg">
+                        <h4>Mision</h4>
+                        <p>Apoyar a nuestros clientes para resolver sus incidentes TI con rapidez y eficacia. </p>
+                    </article>
+                    <article>
+                        <img src="img/vision.jpg">
+                        <h4>Vision</h4>
+                        <p>Ser la primera opcion de nuestros clientes, logrando crecer de manera organica y escalar nuestro modelo a nivel nacional. </p>
+                    </article>
+                    <article>
+                        <img src="img/valores.png">
+                        <h4>Valores</h4>
+                         <p>Transparencia, Eficacia, honestidad. </p>
+                    </article>
+                </div>
+                    </center>
+            </section>
+            
+            <section id="info">
+                <h3>Marcas que Atendemos</h3>
+                <div class="contenedor">
+                    <div class="info-pet">
+                        <img src="img/marcas/Lexmark-2015.jpg" alt="">
+                        <h4>Lexmark</h4>
+                    </div>
+                    <div class="info-pet">
+                        <img src="img/marcas/logo_HP_principal.jpg" alt="">
+                        <h4>HP</h4>
+                    </div>
+                    <div class="info-pet">
+                        <img src="img/marcas/cisco.png" alt="">
+                        <h4>CISCO</h4>
+                    </div>
+                    <div class="info-pet">
+                        <img src="img/marcas/samsung.png" alt="">
+                        <h4>Samsung</h4>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+    
+    
+    
+    
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="cerrarpopup" class="btcerraropoup" >
+            <i class="icon-down-open"></i>
+            </a>
+           <form>
+            <h1>Contacte con un Asesor</h1>
+               <input type="text" placeholder="Nombre Completo">
+               <input type="text" placeholder="Apellidos">
+               <input type="email" placeholder="Correo Electronico">
+               <input type="text" placeholder="Direccion">
+               <input type="text" placeholder="Equipo">
+               <input type="text" placeholder="Describa la Falla">
+
+ <input type="button" onclick="cerrarcontacto()" 
+value="Cancelar">
+<input type="button" onclick="cerrarcontacto()" 
+value="Solicitar">
+ 
+
+           </form>
+            
+        </div>
+    
+    </div>
+    
+    
+
+    
+    
+    
+        <footer>
+            <div class="contenedor">
+            <p class="copy">CompuTI de Oaxaca S.A de C.V &copy; 2019</p> <p>Pagina web parte de trabajo </p>
+                Universidad de Guadalajara  
+                
+            
+       
+            <p>Sistema de Universidad Virtual</p>
+            
+            <p> I7729_2019A Diseño de Aplicacipnes</p>
+                <p> Unidad 3 Actividad 3</p>
+                <p> GUI para un microsotio web</p>
+                Sistema Automatizado de Bitacoras .
+                <p> Alumno : Jaasiel Alejandro Castellanos Gomez</p>
+                <p> Docente : </p>
+                <div class="sociales">
+                    <a class="fontawesome-facebook-sign" href="#"></a>
+                    <a class="fontawesome-twitter" href="#"></a>
+                    <a class="fontawesome-camera-retro" href="#"></a>
+                    <a class="fontawesome-google-plus-sign" href="#"></a>
+                </div>
+            </div>
+        </footer>
+</html>

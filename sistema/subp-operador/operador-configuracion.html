@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    
+    
+    <script type="text/javascript">
+
+function DesplegarOpcionNuevo(){
+    
+var seleccionado = document.getElementById("Veiculo")
+                alert(seleccionado);
+    if(seleccionado==0){
+        alert("0");
+        document.getElementById("carga-gasolina").style.display='block';
+
+    }
+    else{
+     if(seleccionado==1){
+         alert("1");
+        document.getElementById("nuevo-contrato").style.display='block';
+         
+    }   
+        else{
+            if(seleccionado==2){
+                alert("2");
+        document.getElementById("nuevo-contrato").style.display='block';
+         
+        }
+    }
+    
+    
+}
+</script>
+
+<title>Sistema Automatizado de Bitacoras</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/estilo-operador.css" />
+<link rel="stylesheet" href="css/menu.css" />
+<link rel="shortcut icon" href="icono.ico" />
+<link rel="stylesheet" href="css/registro.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="css/acercade.css">
+    
+    
+        
+    
+    
+</head>
+
+<body>
+    <header>
+       <div class="contenedor">
+        
+           <img  class="img-logo" src="img/cara.jpg">
+           <h1>Conductor</h1>
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a class="icon-doc-text-inv" href="operador-principal.html">Bitacora</a>
+            <a class="icon-paper-plane-empty" href="operador-enviar.html">Enviar Bitacora</a>
+            <a class="icon-wrench" href="operador-configuracion.html">Mi Configuracion</a>
+            <a class="icon-github" href="#" id="btabrirpop">Acerca de..</a>
+          </nav>
+
+       </div>
+ 
+
+    </header>
+<body>    
+    
+    
+   
+           
+
+    <br><br><br>
+    
+<div class="container-mobile-cjf">
+  <div class="sub-container-mobile-cjf">
+           <div class="registro">
+                <form id="FMcfgUsuario">
+                    <center>
+                    <img src="img/cara.jpg" width="50px">
+                    </center>
+                    <h1>Nombre de Operador</h1>
+                    
+                    
+                    <input type="text" placeholder="ID:45441" disabled>
+                    <input type="text" placeholder="Alias" disabled>
+                    
+                    <input type="text" placeholder="Correo Registrado">
+                    <input type="tel" placeholder="Telefono">
+                    <input type="text" placeholder="Contraseña">
+                    
+                            
+
+                    <input class="btnreg" type="button" value="Guardar" required>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+    
+<div class="container-mobile-cjf">
+  <div class="sub-container-mobile-cjf">
+           <div class="registro">
+                <form id="FMregistro">
+                    
+                    <h1>Veiculo Asignado </h1>
+                    
+                    
+                    <select name="Contrato" id="Veiculo" onchange="DesplegarOpcionNuevo();">
+                        
+                        <option value="Chevy">Chevrolet Chevy</option>
+                        
+                        <option value="Renault"> Renault DUSTER </option>
+                         
+                        <option value="Jetta"> Jetta Style  </option>
+                    </select>
+                    
+                    <input type="text" placeholder="518-GGB" disabled>
+                    <input type="text" placeholder="Chevrolet" disabled>
+                    <input type="text" placeholder="Chevy" disabled>
+                    <input type="text" placeholder="Blanco" disabled>
+                    <input type="number" placeholder="Kilometraje">
+                    
+                    
+                    <input class="btnreg" type="button" value="Guardar" required>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+    
+
+    
+    
+    
+    
+    
+<div class="container-mobile-cjf">
+  <div class="sub-container-mobile-cjf">
+           <div class="registro">
+                <form id="FMregistro">
+                    
+                    <h1>Configuración SMPT </h1>
+                    
+                    Configure la cuenta desde la que se enviaran correos electronicos
+                   
+                    
+                    <input type="text" placeholder="correo @computi.com">
+                    <input type="password" placeholder="Contraseña" >
+                    <input type="text" placeholder="Servidor SMTP" >
+                    <input type="text" placeholder="Puerto ej, 587" >
+                    
+                    
+                    <select name="SeguridadSMTP" id="Seguridad" onchange="DesplegarOpcionNuevo();">
+                        
+                        <option value="TLS">TLS</option>
+                        
+                        <option value="SSL"> SSL </option>
+                         
+                    </select>
+                    
+                    
+                    
+                    
+                    
+                    <input class="btnreg" type="button" value="Guardar" required>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+<div class="container-mobile-cjf">
+  <div class="sub-container-mobile-cjf">
+           <div class="registro">
+                <form id="FMregistro">
+                    
+                    <h1>Automatizar Envio de Bitacora </h1>
+                    
+                    
+                    
+                    <div class="swtich-container">
+    <input type="checkbox" id="switch">
+    <label for="switch" class="lbl"></label>
+  </div>
+                    <input type="text" placeholder="De empleado@compuTU.com" disabled>
+                    <input type="mail" placeholder="Destinatario 1">
+                    <input type="mail" placeholder="Destinatario 2">
+                    <input type="mail" placeholder="Destinatario 3">
+                    
+                    
+                    <input class="btnreg" type="button" value="Guardar" required>
+               </form>
+           </div>
+   
+      
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="cerrarpopup" class="btcerraropoup" >
+            <i class="icon-down-open"></i>
+            </a>
+            <center>
+            <p class="titulo-popup">
+            Acerca de ..
+            </p>
+        <p class="TituloUniversidad">
+            Universidad de Guadalajara  
+                
+            
+       </p>
+            <p>Sistema de Universidad Virtual</p>
+            
+            <p> I7729_2019A Diseño de Aplicacipnes</p>
+                <p> Unidad 3 Actividad 3</p>
+                <p> GUI para un microsotio web</p>
+                Sistema Automatizado de Bitacoras .
+                <p> Alumno : Jaasiel Alejandro Castellanos Gomez</p>
+                <p> Docente : </p>
+            
+                </center>
+            <img src="../img/udgcolor.png"> <img src="../img/udgvirtual.jpg">
+            <img src="../icono.ico">
+        </div>
+    
+    </div>
+    
+    
+    
+    <script src="js/pop.js"></script>
+    
+    
+    </body>
+    <footer>
+        CompuTI de Oaxaca 2019
+    </footer>
+</body>
+</html>

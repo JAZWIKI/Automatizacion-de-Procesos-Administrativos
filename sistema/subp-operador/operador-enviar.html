@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    
+
+<script type="text/javascript">
+function showmail()
+{
+document.getElementById("enviar-mail").style.display='inline';
+}
+
+function hidemail()
+{
+document.getElementById("enviar-mail").style.display='none';
+}
+
+</script>
+
+
+<title>Sistema Automatizado de Bitacoras</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/estilo-operador.css" />
+<link rel="stylesheet" href="css/menu.css" />
+<link rel="shortcut icon" href="icono.ico" />
+<link rel="stylesheet" href="css/registro.css">
+<link rel="stylesheet" href="css/fontello.css">
+<link rel="stylesheet" href="css/apps-enviar.css">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="css/acercade.css">
+
+    
+    
+</head>
+
+<body>
+    
+    
+    <header>
+       <div class="contenedor">
+           
+           <img  class="img-logo" src="img/cara.jpg">
+           <h1>Conductor</h1>
+          <input type="checkbox" id="menu-bar">
+          <label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a class="icon-doc-text-inv" href="operador-principal.html">Bitacora</a>
+            <a class="icon-paper-plane-empty" href="operador-enviar.html">Enviar Bitacora</a>
+            <a class="icon-wrench" href="operador-configuracion.html">Mi Configuracion</a>
+            <a class="icon-github" href="#" id="btabrirpop">Acerca de..</a>
+          </nav>
+
+       </div>
+ 
+
+    </header>
+
+    
+    
+<body>    
+    
+    
+   
+           <br><br><br>
+
+    
+    
+<div class="container-app" id="seleccion-enviar">
+  
+            <div class="sub-container-app" id="iconocorreo">
+                
+                    
+                    <input type="button" 
+                    onclick="showmail()" 
+                    value="" class="clsenviarcorreo" >
+
+                    
+                
+               
+                    <a href="../plantillas/bitacora.xls" class="clsenviarexcel">
+                    
+                    </a>
+                    <a href="../plantillas/bitacora.pdf" class="clsenviarpdf">
+                   
+                    </a>        
+                </div>  
+               
+  
+    </div>
+<div id="enviar-mail" class="container-mail" style="display: none">
+
+    
+    <div class="sub-container-mail">
+        
+    <form >
+        <input type="email" placeholder="Escriba Aqui el Correo Destinatario"> 
+        <input type="button" onclick="hidemail()"  name="Enviar" value="Enviar Correo" class="btnreg">
+        
+    </form>
+    </div>
+</div>
+
+
+    
+    
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="cerrarpopup" class="btcerraropoup" >
+            <i class="icon-down-open"></i>
+            </a>
+            <center>
+            <p class="titulo-popup">
+            Acerca de ..
+            </p>
+        <p class="TituloUniversidad">
+            Universidad de Guadalajara  
+                
+            
+       </p>
+            <p>Sistema de Universidad Virtual</p>
+            
+            <p> I7729_2019A Diseño de Aplicacipnes</p>
+                <p> Unidad 3 Actividad 3</p>
+                <p> GUI para un microsotio web</p>
+                Sistema Automatizado de Bitacoras .
+                <p> Alumno : Jaasiel Alejandro Castellanos Gomez</p>
+                <p> Docente : </p>
+            
+                </center>
+            <img src="../img/udgcolor.png"> <img src="../img/udgvirtual.jpg">
+            <img src="../icono.ico">
+        </div>
+    
+    </div>
+    <script src="js/pop.js"></script>
+    </body>
+    <footer>
+        CompuTI de Oaxaca 2019
+    </footer>
+</body>
+</html>

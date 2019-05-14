@@ -1,0 +1,35 @@
+.registro{
+    
+    padding: 0% 35%;    
+    height: auto;
+    margin: -42px;
+    border-radius: 5px;
+}
+form{
+    padding-top: 100px;
+    border:1px;
+    border-radius: 10px;box-sizing: content-box;
+    width: 200px;
+    height: auto;
+    
+    
+}
+form input{
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    width: 178px;
+}
+form select{
+    text-align: center;
+    width: 178px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+.btnreg{
+    background: #e89c07;
+    color: #fff;
+    align-content: center;
+    width: 178px;
+}

@@ -1,0 +1,42 @@
+.overlay{
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.popup{
+    background: #f8F8F8;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.8);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+.popup .btcerraropoup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+        
+    
+}
+.popup .titulo-popup
+{
+    font-size: 25px;
+    color:  #105fa0;
+}
+.popup .TituloUniversidad{
+    
+    font-size: 30px;
+}
+.popup img{
+    
+    width: 100px;
+}
